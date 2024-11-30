@@ -73,4 +73,3 @@ string action // "start" or "end"
 3. Scan QR code at end
 4. View attestation history
 
-## Development
