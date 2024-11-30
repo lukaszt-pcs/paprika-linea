@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Paprika Studio Time Logger
 
-## Getting Started
+A blockchain-based employee time logging system powered by Verax Attestation Registry on Linea. This system enables employees to record their working hours securely and immutably through QR code scanning.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Paprika Studio Time Logger is a decentralized application (dApp) that leverages the Verax Attestation Registry to create tamper-proof records of employee working hours. Each time log is stored as an on-chain attestation, ensuring complete transparency and immutability of work records.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Verax Integration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The system utilizes Verax's powerful attestation framework:
+- **Schema Registry**: Defines the structure of time log data
+- **Portal System**: Manages the submission of time log attestations
+- **On-chain Storage**: All records are stored immutably on the Linea blockchain
+- **Verifiable Proofs**: Each time log can be independently verified
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **QR Code Scanning**: Employees can easily log their time by scanning job-specific QR codes
+- **Blockchain Attestations**: All time logs are stored as attestations on the Verax registry
+- **Secure Authentication**: Wallet-based authentication for employees and administrators
+- **Real-time Verification**: Instant verification of time logs through blockchain
+- **Administrative Dashboard**: Management interface for overseeing employee time records
 
-To learn more about Next.js, take a look at the following resources:
+## Technical Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Frontend Application**
+   - Next.js web application
+   - Web3 wallet integration
+   - QR code scanning capabilities
+   - Administrative dashboard
 
-## Deploy on Vercel
+2. **Smart Contracts**
+   - Verax Attestation Registry integration
+   - Custom schema for time logging
+   - Portal for attestation submission
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Blockchain Infrastructure**
+   - Network: Linea Mainnet
+   - Registry: Verax Attestation Registry
+   - Data Structure: On-chain attestations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Schema Structure

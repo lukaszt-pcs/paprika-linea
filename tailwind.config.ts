@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'paprika-red': '#FF5733',
+        'paprika-red-dark': '#E64A2E',
       },
     },
   },
