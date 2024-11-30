@@ -43,3 +43,34 @@ The system utilizes Verax's powerful attestation framework:
    - Data Structure: On-chain attestations
 
 ### Schema Structure
+
+solidity
+(
+string employeeId, // Employee identifier
+string jobId, // Job/task identifier
+uint256 timestamp, // Time of action
+string action // "start" or "end"
+)
+
+
+
+### Verax Components
+- Schema Registry for data structure
+- Portal for attestation submission
+- On-chain attestations for time records
+
+## Usage
+
+### Admin Flow
+1. Connect wallet to Linea
+2. Create time logging schema
+3. Deploy attestation portal
+4. Monitor employee records
+
+### Employee Flow
+1. Connect wallet
+2. Scan QR code at start
+3. Scan QR code at end
+4. View attestation history
+
+## Development
